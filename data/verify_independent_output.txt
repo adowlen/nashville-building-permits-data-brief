@@ -1,0 +1,11 @@
+PASS  server count (note: live service rolls daily; drift-tolerant)  live now 29651 vs snapshot 29651
+PASS  server groupBy type counts reproduce snapshot counts for unchanged types  29/29 types match the snapshot exactly (rolling window shifts the rest)
+PASS  server max stated cost is at least the snapshot max (window rolls)  server max 226,068,759 vs stats 226,068,759 (total legitimately shifts as the window rolls: server now 13,227,134,850)
+PASS  pyarrow row count  29651
+PASS  pyarrow cost total  sum 13,227,134,850 (stats 13,227,134,850)
+PASS  pyarrow cost median exact  102,205
+PASS  pyarrow wait median (epoch-day arithmetic, independent of builder tz path)  median 29.0 days over 29650 valid rows
+PASS  pyarrow negative waits  1
+PASS  pyarrow ObjectId unique  29651 unique
+
+9/9 checks pass

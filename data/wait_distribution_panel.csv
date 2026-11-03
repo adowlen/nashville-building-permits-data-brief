@@ -1,0 +1,7 @@
+bucket,permits,share_of_valid
+0 days (same day),754,0.0254
+1-30 days,14342,0.4837
+31-90 days,8494,0.2865
+91-180 days,3431,0.1157
+181-365 days,2049,0.0691
+over 365 days,580,0.0196

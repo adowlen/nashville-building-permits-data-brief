@@ -1,0 +1,809 @@
+{
+  "dataset": "Nashville Building Permits Issued (Building_Permits_Issued_2 layer 0)",
+  "snapshot_date": "2026-11-03",
+  "rows": 29651,
+  "unit": "one row = one ISSUED building permit (metadata v2.0, 2024-11-12); applications never issued and trade permits are NOT in this dataset",
+  "coverage": {
+    "date_issued_min": "2023-10-30",
+    "date_issued_max": "2026-11-02",
+    "date_entered_min": "2020-06-17",
+    "date_entered_max": "2026-10-30",
+    "window_rule": "rolling three years by ISSUE date per source description; entered dates run earlier (long-pending permits issued inside the window)"
+  },
+  "timing_all_valid": {
+    "n_permits": 29650,
+    "n_timed": 29650,
+    "median_days": 29.0,
+    "mean_days": 64.9,
+    "p90_days": 166.0,
+    "same_day_share": 0.0254,
+    "over_90_share": 0.2044,
+    "over_180_share": 0.0887,
+    "over_365_share": 0.0196
+  },
+  "timing_negative_rows_excluded": 1,
+  "timing_negative_wait_values": [
+    -11
+  ],
+  "timing_by_type": {
+    "Building Residential - New": {
+      "n_permits": 10954,
+      "n_timed": 10954,
+      "median_days": 35.0,
+      "mean_days": 67.6,
+      "p90_days": 166.0,
+      "same_day_share": 0.0012,
+      "over_90_share": 0.1944,
+      "over_180_share": 0.0875,
+      "over_365_share": 0.0187
+    },
+    "Building Commercial - Rehab": {
+      "n_permits": 3793,
+      "n_timed": 3793,
+      "median_days": 50.0,
+      "mean_days": 81.4,
+      "p90_days": 183.0,
+      "same_day_share": 0.0021,
+      "over_90_share": 0.295,
+      "over_180_share": 0.1165,
+      "over_365_share": 0.0192
+    },
+    "Building Residential - Addition": {
+      "n_permits": 3167,
+      "n_timed": 3167,
+      "median_days": 22.0,
+      "mean_days": 43.5,
+      "p90_days": 98.0,
+      "same_day_share": 0.0051,
+      "over_90_share": 0.1143,
+      "over_180_share": 0.0341,
+      "over_365_share": 0.0076
+    },
+    "Building Residential - Rehab": {
+      "n_permits": 2430,
+      "n_timed": 2430,
+      "median_days": 8.0,
+      "mean_days": 18.7,
+      "p90_days": 42.0,
+      "same_day_share": 0.0905,
+      "over_90_share": 0.0267,
+      "over_180_share": 0.0111,
+      "over_365_share": 0.0037
+    },
+    "Building Demolition Permit": {
+      "n_permits": 2170,
+      "n_timed": 2170,
+      "median_days": 14.0,
+      "mean_days": 34.3,
+      "p90_days": 85.10000000000014,
+      "same_day_share": 0.0124,
+      "over_90_share": 0.0917,
+      "over_180_share": 0.0235,
+      "over_365_share": 0.0065
+    },
+    "Building Sign Permit": {
+      "n_permits": 1989,
+      "n_timed": 1989,
+      "median_days": 14.0,
+      "mean_days": 36.2,
+      "p90_days": 99.20000000000005,
+      "same_day_share": 0.0513,
+      "over_90_share": 0.1156,
+      "over_180_share": 0.0297,
+      "over_365_share": 0.0075
+    },
+    "Building Commercial - Tenant Finish Out": {
+      "n_permits": 1573,
+      "n_timed": 1573,
+      "median_days": 119.0,
+      "mean_days": 139.8,
+      "p90_days": 328.0,
+      "same_day_share": 0.0,
+      "over_90_share": 0.5868,
+      "over_180_share": 0.2632,
+      "over_365_share": 0.0242
+    },
+    "Building Commercial - New": {
+      "n_permits": 864,
+      "n_timed": 864,
+      "median_days": 93.0,
+      "mean_days": 146.8,
+      "p90_days": 362.70000000000005,
+      "same_day_share": 0.0,
+      "over_90_share": 0.5116,
+      "over_180_share": 0.2766,
+      "over_365_share": 0.0995
+    },
+    "Building Residential - Change Contractor": {
+      "n_permits": 409,
+      "n_timed": 409,
+      "median_days": 4.0,
+      "mean_days": 12.1,
+      "p90_days": 31.0,
+      "same_day_share": 0.2029,
+      "over_90_share": 0.022,
+      "over_180_share": 0.0024,
+      "over_365_share": 0.0024
+    },
+    "Building Use & Occupancy": {
+      "n_permits": 389,
+      "n_timed": 389,
+      "median_days": 111.0,
+      "mean_days": 184.2,
+      "p90_days": 505.0,
+      "same_day_share": 0.0103,
+      "over_90_share": 0.5373,
+      "over_180_share": 0.3599,
+      "over_365_share": 0.144
+    },
+    "Building Commercial - Roofing / Siding": {
+      "n_permits": 334,
+      "n_timed": 334,
+      "median_days": 12.0,
+      "mean_days": 21.9,
+      "p90_days": 47.0,
+      "same_day_share": 0.006,
+      "over_90_share": 0.0539,
+      "over_180_share": 0.003,
+      "over_365_share": 0.0
+    },
+    "Building Tree Removal Permit": {
+      "n_permits": 325,
+      "n_timed": 325,
+      "median_days": 0.0,
+      "mean_days": 11.3,
+      "p90_days": 25.600000000000023,
+      "same_day_share": 0.5631,
+      "over_90_share": 0.0308,
+      "over_180_share": 0.0092,
+      "over_365_share": 0.0031
+    },
+    "Building Commercial - Addition": {
+      "n_permits": 257,
+      "n_timed": 257,
+      "median_days": 105.0,
+      "mean_days": 149.6,
+      "p90_days": 320.4,
+      "same_day_share": 0.0,
+      "over_90_share": 0.5525,
+      "over_180_share": 0.3113,
+      "over_365_share": 0.07
+    },
+    "Building Residential - Roofing / Siding": {
+      "n_permits": 186,
+      "n_timed": 186,
+      "median_days": 6.0,
+      "mean_days": 11.1,
+      "p90_days": 26.5,
+      "same_day_share": 0.129,
+      "over_90_share": 0.0108,
+      "over_180_share": 0.0054,
+      "over_365_share": 0.0
+    },
+    "Building Commercial - Change Contractor": {
+      "n_permits": 183,
+      "n_timed": 183,
+      "median_days": 12.0,
+      "mean_days": 20.9,
+      "p90_days": 46.0,
+      "same_day_share": 0.2077,
+      "over_90_share": 0.0273,
+      "over_180_share": 0.0109,
+      "over_365_share": 0.0
+    },
+    "Building Commercial - Shell": {
+      "n_permits": 149,
+      "n_timed": 149,
+      "median_days": 150.0,
+      "mean_days": 245.9,
+      "p90_days": 606.2000000000014,
+      "same_day_share": 0.0,
+      "over_90_share": 0.7651,
+      "over_180_share": 0.4295,
+      "over_365_share": 0.1745
+    },
+    "Building Commercial - Amend Permit": {
+      "n_permits": 132,
+      "n_timed": 132,
+      "median_days": 28.0,
+      "mean_days": 57.4,
+      "p90_days": 91.0,
+      "same_day_share": 0.0303,
+      "over_90_share": 0.1136,
+      "over_180_share": 0.0758,
+      "over_365_share": 0.0076
+    },
+    "Building Residential - Amend Permit": {
+      "n_permits": 94,
+      "n_timed": 94,
+      "median_days": 5.5,
+      "mean_days": 19.3,
+      "p90_days": 38.10000000000001,
+      "same_day_share": 0.2128,
+      "over_90_share": 0.0319,
+      "over_180_share": 0.0213,
+      "over_365_share": 0.0106
+    },
+    "Building Commercial - Foundation": {
+      "n_permits": 56,
+      "n_timed": 56,
+      "median_days": 87.5,
+      "mean_days": 172.5,
+      "p90_days": 407.5,
+      "same_day_share": 0.0,
+      "over_90_share": 0.4821,
+      "over_180_share": 0.3036,
+      "over_365_share": 0.1071
+    },
+    "Building Residential Rehab Storm Damage": {
+      "n_permits": 49,
+      "n_timed": 49,
+      "median_days": 8.0,
+      "mean_days": 20.4,
+      "p90_days": 42.20000000000003,
+      "same_day_share": 0.0816,
+      "over_90_share": 0.0612,
+      "over_180_share": 0.0204,
+      "over_365_share": 0.0
+    },
+    "Building Commercial - Fire Damage": {
+      "n_permits": 38,
+      "n_timed": 38,
+      "median_days": 47.5,
+      "mean_days": 70.6,
+      "p90_days": 159.3,
+      "same_day_share": 0.0,
+      "over_90_share": 0.3684,
+      "over_180_share": 0.0,
+      "over_365_share": 0.0
+    },
+    "Building Residential - Fire Damage": {
+      "n_permits": 33,
+      "n_timed": 33,
+      "median_days": 7.0,
+      "mean_days": 15.8,
+      "p90_days": 40.800000000000004,
+      "same_day_share": 0.0606,
+      "over_90_share": 0.0303,
+      "over_180_share": 0.0,
+      "over_365_share": 0.0
+    },
+    "Building Residential New Storm Damage": {
+      "n_permits": 22,
+      "n_timed": 22,
+      "median_days": 16.5,
+      "mean_days": 29.8,
+      "p90_days": 76.40000000000009,
+      "same_day_share": 0.0909,
+      "over_90_share": 0.0909,
+      "over_180_share": 0.0,
+      "over_365_share": 0.0
+    },
+    "Building Commercial - Structural Frame": {
+      "n_permits": 20,
+      "n_timed": 20,
+      "median_days": 143.5,
+      "mean_days": 187.2,
+      "p90_days": 447.0,
+      "same_day_share": 0.0,
+      "over_90_share": 0.6,
+      "over_180_share": 0.35,
+      "over_365_share": 0.25
+    },
+    "Building Commercial Rehab Storm Damage": {
+      "n_permits": 11,
+      "n_timed": 11,
+      "median_days": 30.0,
+      "mean_days": 44.2,
+      "p90_days": 84.0,
+      "same_day_share": 0.0,
+      "over_90_share": 0.0909,
+      "over_180_share": 0.0,
+      "over_365_share": 0.0
+    },
+    "Building Demolition Storm Damage": {
+      "n_permits": 8,
+      "n_timed": 8,
+      "median_days": 10.0,
+      "mean_days": 38.9,
+      "p90_days": 89.29999999999997,
+      "same_day_share": 0.0,
+      "over_90_share": 0.125,
+      "over_180_share": 0.125,
+      "over_365_share": 0.0
+    },
+    "Building Residential - Foundation": {
+      "n_permits": 8,
+      "n_timed": 8,
+      "median_days": 20.0,
+      "mean_days": 78.6,
+      "p90_days": 180.39999999999992,
+      "same_day_share": 0.0,
+      "over_90_share": 0.125,
+      "over_180_share": 0.125,
+      "over_365_share": 0.125
+    },
+    "Building Commercial New Storm Damage": {
+      "n_permits": 4,
+      "n_timed": 4,
+      "median_days": 49.5,
+      "mean_days": 68.2,
+      "p90_days": 111.90000000000002,
+      "same_day_share": 0.0,
+      "over_90_share": 0.25,
+      "over_180_share": 0.0,
+      "over_365_share": 0.0
+    },
+    "Building Moving Permit": {
+      "n_permits": 3,
+      "n_timed": 3,
+      "median_days": 0.0,
+      "mean_days": 14.0,
+      "p90_days": 33.6,
+      "same_day_share": 0.6667,
+      "over_90_share": 0.0,
+      "over_180_share": 0.0,
+      "over_365_share": 0.0
+    }
+  },
+  "type_counts_all_rows": {
+    "Building Residential - New": 10954,
+    "Building Commercial - Rehab": 3793,
+    "Building Residential - Addition": 3167,
+    "Building Residential - Rehab": 2430,
+    "Building Demolition Permit": 2171,
+    "Building Sign Permit": 1989,
+    "Building Commercial - Tenant Finish Out": 1573,
+    "Building Commercial - New": 864,
+    "Building Residential - Change Contractor": 409,
+    "Building Use & Occupancy": 389,
+    "Building Commercial - Roofing / Siding": 334,
+    "Building Tree Removal Permit": 325,
+    "Building Commercial - Addition": 257,
+    "Building Residential - Roofing / Siding": 186,
+    "Building Commercial - Change Contractor": 183,
+    "Building Commercial - Shell": 149,
+    "Building Commercial - Amend Permit": 132,
+    "Building Residential - Amend Permit": 94,
+    "Building Commercial - Foundation": 56,
+    "Building Residential Rehab Storm Damage": 49,
+    "Building Commercial - Fire Damage": 38,
+    "Building Residential - Fire Damage": 33,
+    "Building Residential New Storm Damage": 22,
+    "Building Commercial - Structural Frame": 20,
+    "Building Commercial Rehab Storm Damage": 11,
+    "Building Residential - Foundation": 8,
+    "Building Demolition Storm Damage": 8,
+    "Building Commercial New Storm Damage": 4,
+    "Building Moving Permit": 3
+  },
+  "type_code_field_warning": "Per_Ty code field disagrees with Permit_Type_Description on small counts and holds a person's name ('Zion Huang') on 1 row; the Description field is authoritative in this layer",
+  "cost": {
+    "definition": "stated value of construction (applicant-stated, per metadata)",
+    "total_stated": 13227134850.0,
+    "median": 102205.0,
+    "mean": 446094.0,
+    "max": 226068759.0,
+    "min_positive": 1.0,
+    "zero_or_null_or_negative": 0
+  },
+  "geography": {
+    "council_district": {
+      "known_rows": 29632,
+      "unknown_rows": 19,
+      "unknown_composition": "2 rows with district 0 (sentinel) + 17 rows null",
+      "unknown_zero_sentinel_rows": 2,
+      "unknown_null_rows": 17,
+      "top5_districts_share_of_known_total_cost": 0.4857,
+      "top_district_share_of_citywide_total_cost": 0.238,
+      "by_district_sorted_by_total_cost": [
+        {
+          "district": 19,
+          "permits": 2514,
+          "total_cost": 3148570433.0,
+          "median_cost": 129473.0,
+          "median_wait_days": 62.0
+        },
+        {
+          "district": 2,
+          "permits": 1482,
+          "total_cost": 892808044.0,
+          "median_cost": 231606.0,
+          "median_wait_days": 49.0
+        },
+        {
+          "district": 18,
+          "permits": 957,
+          "total_cost": 884661966.0,
+          "median_cost": 103254.0,
+          "median_wait_days": 33.0
+        },
+        {
+          "district": 17,
+          "permits": 1576,
+          "total_cost": 804497673.0,
+          "median_cost": 139437.0,
+          "median_wait_days": 37.5
+        },
+        {
+          "district": 20,
+          "permits": 1255,
+          "total_cost": 676523843.0,
+          "median_cost": 153990.0,
+          "median_wait_days": 36.0
+        },
+        {
+          "district": 13,
+          "permits": 407,
+          "total_cost": 616195395.0,
+          "median_cost": 60000.0,
+          "median_wait_days": 32.0
+        },
+        {
+          "district": 5,
+          "permits": 1671,
+          "total_cost": 466916954.0,
+          "median_cost": 93355.0,
+          "median_wait_days": 40.0
+        },
+        {
+          "district": 21,
+          "permits": 1097,
+          "total_cost": 415153290.0,
+          "median_cost": 131166.0,
+          "median_wait_days": 38.0
+        },
+        {
+          "district": 15,
+          "permits": 1026,
+          "total_cost": 397480609.0,
+          "median_cost": 61377.0,
+          "median_wait_days": 25.0
+        },
+        {
+          "district": 24,
+          "permits": 1259,
+          "total_cost": 360822185.0,
+          "median_cost": 88475.0,
+          "median_wait_days": 32.0
+        },
+        {
+          "district": 6,
+          "permits": 1502,
+          "total_cost": 328202878.0,
+          "median_cost": 70257.0,
+          "median_wait_days": 31.0
+        },
+        {
+          "district": 23,
+          "permits": 1074,
+          "total_cost": 309404800.0,
+          "median_cost": 149453.0,
+          "median_wait_days": 30.0
+        },
+        {
+          "district": 34,
+          "permits": 632,
+          "total_cost": 279193996.0,
+          "median_cost": 114184.0,
+          "median_wait_days": 27.0
+        },
+        {
+          "district": 8,
+          "permits": 579,
+          "total_cost": 276322567.0,
+          "median_cost": 291607.0,
+          "median_wait_days": 24.0
+        },
+        {
+          "district": 33,
+          "permits": 809,
+          "total_cost": 261266549.0,
+          "median_cost": 288148.0,
+          "median_wait_days": 21.0
+        },
+        {
+          "district": 25,
+          "permits": 894,
+          "total_cost": 261223622.0,
+          "median_cost": 101852.5,
+          "median_wait_days": 32.0
+        },
+        {
+          "district": 12,
+          "permits": 789,
+          "total_cost": 239969358.0,
+          "median_cost": 277847.0,
+          "median_wait_days": 25.0
+        },
+        {
+          "district": 26,
+          "permits": 733,
+          "total_cost": 228957121.0,
+          "median_cost": 56814.0,
+          "median_wait_days": 25.0
+        },
+        {
+          "district": 10,
+          "permits": 515,
+          "total_cost": 227267772.0,
+          "median_cost": 125000.0,
+          "median_wait_days": 40.0
+        },
+        {
+          "district": 16,
+          "permits": 721,
+          "total_cost": 213467574.0,
+          "median_cost": 35000.0,
+          "median_wait_days": 25.0
+        },
+        {
+          "district": 32,
+          "permits": 480,
+          "total_cost": 198433312.0,
+          "median_cost": 35066.0,
+          "median_wait_days": 21.0
+        },
+        {
+          "district": 3,
+          "permits": 870,
+          "total_cost": 191270772.0,
+          "median_cost": 185186.0,
+          "median_wait_days": 19.0
+        },
+        {
+          "district": 1,
+          "permits": 671,
+          "total_cost": 172005668.0,
+          "median_cost": 61824.0,
+          "median_wait_days": 33.0
+        },
+        {
+          "district": 11,
+          "permits": 804,
+          "total_cost": 161347768.0,
+          "median_cost": 168073.5,
+          "median_wait_days": 17.0
+        },
+        {
+          "district": 9,
+          "permits": 705,
+          "total_cost": 145721049.0,
+          "median_cost": 138000.0,
+          "median_wait_days": 16.0
+        },
+        {
+          "district": 7,
+          "permits": 997,
+          "total_cost": 138248582.0,
+          "median_cost": 46995.0,
+          "median_wait_days": 23.0
+        },
+        {
+          "district": 35,
+          "permits": 610,
+          "total_cost": 135683784.0,
+          "median_cost": 74301.0,
+          "median_wait_days": 27.0
+        },
+        {
+          "district": 14,
+          "permits": 451,
+          "total_cost": 133930631.0,
+          "median_cost": 47847.0,
+          "median_wait_days": 20.0
+        },
+        {
+          "district": 28,
+          "permits": 449,
+          "total_cost": 132956757.0,
+          "median_cost": 34348.0,
+          "median_wait_days": 21.0
+        },
+        {
+          "district": 29,
+          "permits": 225,
+          "total_cost": 93903006.0,
+          "median_cost": 19093.0,
+          "median_wait_days": 29.0
+        },
+        {
+          "district": 31,
+          "permits": 462,
+          "total_cost": 92205428.0,
+          "median_cost": 60508.0,
+          "median_wait_days": 30.0
+        },
+        {
+          "district": 30,
+          "permits": 279,
+          "total_cost": 86329483.0,
+          "median_cost": 70000.0,
+          "median_wait_days": 27.0
+        },
+        {
+          "district": 22,
+          "permits": 379,
+          "total_cost": 82006973.0,
+          "median_cost": 55608.0,
+          "median_wait_days": 28.0
+        },
+        {
+          "district": 27,
+          "permits": 334,
+          "total_cost": 69490659.0,
+          "median_cost": 31989.0,
+          "median_wait_days": 21.0
+        },
+        {
+          "district": 4,
+          "permits": 424,
+          "total_cost": 69484403.0,
+          "median_cost": 41628.0,
+          "median_wait_days": 20.0
+        }
+      ]
+    },
+    "zip_top10_by_permits": [
+      {
+        "zip": "37207",
+        "permits": 2698,
+        "total_cost": 1118501549.0
+      },
+      {
+        "zip": "37209",
+        "permits": 2572,
+        "total_cost": 850292830.0
+      },
+      {
+        "zip": "37203",
+        "permits": 2398,
+        "total_cost": 2461416239.0
+      },
+      {
+        "zip": "37013",
+        "permits": 2124,
+        "total_cost": 614541377.0
+      },
+      {
+        "zip": "37211",
+        "permits": 1863,
+        "total_cost": 357600853.0
+      },
+      {
+        "zip": "37206",
+        "permits": 1854,
+        "total_cost": 388698772.0
+      },
+      {
+        "zip": "37115",
+        "permits": 1452,
+        "total_cost": 434478947.0
+      },
+      {
+        "zip": "37205",
+        "permits": 1401,
+        "total_cost": 583935908.0
+      },
+      {
+        "zip": "37076",
+        "permits": 1379,
+        "total_cost": 378939686.0
+      },
+      {
+        "zip": "37215",
+        "permits": 1126,
+        "total_cost": 385924166.0
+      }
+    ],
+    "coords": "Lat/Lon present on 100% of rows, no 0,0 sentinel, all inside Nashville-Davidson bbox",
+    "census_tract_format_counts": {
+      "eight_digit_no_state_prefix": 22738,
+      "full_geoid_11digit": 6893,
+      "null": 17,
+      "short_code": 3
+    },
+    "census_tract_normalized": {
+      "known_rows": 29629,
+      "unknown_rows": 22,
+      "unique_tracts": 182,
+      "rule": "11-digit form as-is; 8-digit form -> '47' + zero-padded 9 digits; result must be an 11-digit 47037 GEOID or the row is unknown (2 anomalies, 3 short codes, 17 nulls = 22 unknown)",
+      "control": "no parcel maps to more than one normalized tract; the two served forms share 118 tracts"
+    }
+  },
+  "issued_by_month": {
+    "2023-10": 54,
+    "2023-11": 700,
+    "2023-12": 623,
+    "2024-01": 716,
+    "2024-02": 817,
+    "2024-03": 754,
+    "2024-04": 942,
+    "2024-05": 936,
+    "2024-06": 765,
+    "2024-07": 905,
+    "2024-08": 820,
+    "2024-09": 694,
+    "2024-10": 833,
+    "2024-11": 650,
+    "2024-12": 783,
+    "2025-01": 886,
+    "2025-02": 735,
+    "2025-03": 875,
+    "2025-04": 888,
+    "2025-05": 827,
+    "2025-06": 921,
+    "2025-07": 851,
+    "2025-08": 776,
+    "2025-09": 863,
+    "2025-10": 912,
+    "2025-11": 666,
+    "2025-12": 843,
+    "2026-01": 613,
+    "2026-02": 800,
+    "2026-03": 995,
+    "2026-04": 842,
+    "2026-05": 778,
+    "2026-06": 864,
+    "2026-07": 871,
+    "2026-08": 901,
+    "2026-09": 953,
+    "2026-10": 963,
+    "2026-11": 36
+  },
+  "entered_by_year": {
+    "2020": 1,
+    "2021": 14,
+    "2022": 165,
+    "2023": 2865,
+    "2024": 9560,
+    "2025": 10166,
+    "2026": 6880
+  },
+  "duplicates": {
+    "permit_number_duplicate_rows": 51,
+    "unique_permit_numbers": 29600,
+    "unique_parcels": 20851
+  },
+  "censoring_note": "Entry-to-issue waits are observed only for permits that WERE issued. Applications still pending or never issued are absent by design, so waits for recent entry cohorts are right-censored and read artificially short; the all-window median is the shelf figure, cohort medians for the last two quarters are not.",
+  "master_child_note": "Purpose text shows multi-unit developments issue one child permit per dwelling unit under a master permit; permit counts are units/permits, not projects. Project-level counts would need master-permit parsing of the free-text Purpose field, which is boilerplate-heavy and null on 296 rows (1.0%).",
+  "wait_distribution": [
+    {
+      "bucket": "0 days (same day)",
+      "permits": 754,
+      "share_of_valid": 0.0254
+    },
+    {
+      "bucket": "1-30 days",
+      "permits": 14342,
+      "share_of_valid": 0.4837
+    },
+    {
+      "bucket": "31-90 days",
+      "permits": 8494,
+      "share_of_valid": 0.2865
+    },
+    {
+      "bucket": "91-180 days",
+      "permits": 3431,
+      "share_of_valid": 0.1157
+    },
+    {
+      "bucket": "181-365 days",
+      "permits": 2049,
+      "share_of_valid": 0.0691
+    },
+    {
+      "bucket": "over 365 days",
+      "permits": 580,
+      "share_of_valid": 0.0196
+    }
+  ],
+  "issued_by_year": {
+    "2023": 1377,
+    "2024": 9615,
+    "2025": 10043,
+    "2026": 8616
+  },
+  "purpose_null_rows": 296
+}
